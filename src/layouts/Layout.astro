@@ -1,0 +1,62 @@
+---
+const { title = "Top League Tech" } = Astro.props;
+---
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content="Astro" />
+  <title>{title}</title>
+  <link rel="stylesheet" href="/assets/fonts.css" />
+  <link rel="stylesheet" href="/assets/head-inline.css" />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="stylesheet" href="/assets/svgs-attachment.css" />
+  <link rel="stylesheet" href="/assets/astro-theme.css" />
+</head>
+<body>
+  <div class="tlt-astro-root">
+    <slot />
+  </div>
+  <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">◐</button>
+  <script is:inline>
+    (() => {
+      const themeKey = 'tlt-theme';
+      const saved = localStorage.getItem(themeKey);
+      const isDark = saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.dataset.theme = isDark ? 'dark' : 'light';
+
+      const toggleTheme = () => {
+        const dark = document.documentElement.dataset.theme !== 'dark';
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+        localStorage.setItem(themeKey, dark ? 'dark' : 'light');
+        document.querySelector('.theme-toggle')?.setAttribute('aria-pressed', String(dark));
+      };
+
+      document.addEventListener('click', (event) => {
+        const toggle = event.target.closest('.theme-toggle');
+        if (toggle) toggleTheme();
+
+        const menu = event.target.closest('.menu-toggle');
+        if (menu) {
+          const nav = document.querySelector('.nav-primary');
+          const open = menu.getAttribute('aria-expanded') === 'true';
+          menu.setAttribute('aria-expanded', String(!open));
+          menu.classList.toggle('activated', !open);
+          nav?.classList.toggle('genesis-responsive-menu-open', !open);
+          if (nav) nav.style.display = open ? '' : 'block';
+        }
+
+        const submenu = event.target.closest('.sub-menu-toggle');
+        if (submenu) {
+          const item = submenu.closest('.menu-item');
+          const sub = item?.querySelector(':scope > .sub-menu');
+          const open = submenu.classList.toggle('activated');
+          submenu.setAttribute('aria-expanded', String(open));
+          if (sub) sub.style.display = open ? 'block' : 'none';
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
