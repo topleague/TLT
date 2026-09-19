@@ -2076,3 +2076,23 @@ li.custom-list {
 	font-size: 3.45rem;
 	line-height: 4.5rem;
 }
+
+/* EXTRA CSS to FIX Footer */
+.footer-widgets {
+    position: static !important;
+    overflow-x: hidden;
+    background-color: #0b44fa !important;
+    background-image: url('/assets/wavy-pattern-1.svg') !important;
+    background-repeat: repeat;
+    background-position: center right;
+    background-size: 420px;
+}
+
+.site-footer {
+    background-color: #1248f7 !important;
+    background-image: url('/assets/wavy-pattern-1.svg') !important;
+    background-repeat: repeat;
+    background-position: center right;
+    background-size: 420px;
+    color: #fff;
+}
