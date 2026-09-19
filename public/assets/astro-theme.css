@@ -104,7 +104,8 @@ html[data-theme="dark"] .theme-toggle{background:#fff;color:#111;border-color:#d
 }
 .site-footer {
   background-color: #1248f7 !important;
-  background-image: url('/assets/wavy-pattern-1.svg') !important;
+  /*background-image: url('/assets/wavy-pattern-1.svg') !important;*/
+  background-image: none !important;
   background-repeat: repeat;
   background-position: center right;
   background-size: 420px;
