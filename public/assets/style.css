@@ -1483,12 +1483,22 @@ li.custom-list {
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 
-.footer-widgets {
+/*.footer-widgets {
 	background-color: #fff;
 	clear: both;
 	font-size: 18px;
 	font-size: 1.8rem;
 	padding: 60px 0;
+}*/
+
+.footer-widgets {
+    position: static !important;
+    overflow-x: hidden;
+    background-color: #0b44fa !important;
+    background-image: none !important;
+    clear: both;
+    font-size: 1.8rem;
+    padding: 60px 0;
 }
 
 .footer-widgets-1,
@@ -1514,7 +1524,7 @@ li.custom-list {
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
 
-.site-footer {
+/*.site-footer {
 	background-color: #fff;
 	border-top: 1px solid #eee;
 	font-size: 16px;
@@ -1523,6 +1533,16 @@ li.custom-list {
 	padding: 60px 0;
 	text-align: center;
  	background: url(https://topleague.in/wp-content/uploads/2020/09/hero-pattern.svg); 
+}*/
+
+.site-footer {
+    background-color: #1248f7 !important;
+    background-image: none !important;
+    border-top: 1px solid #eee;
+    font-size: 1.6rem;
+    line-height: 1;
+    padding: 60px 0;
+    text-align: center;
 }
 
 .site-footer p {
