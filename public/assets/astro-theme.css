@@ -77,7 +77,7 @@ html[data-theme="dark"] .theme-toggle{background:#fff;color:#111;border-color:#d
 }
 
 /* Footer */
-.footer-widgets {
+/*.footer-widgets {
   position: relative !important;
   overflow: hidden;
   background-color: #0b44fa !important;
@@ -85,7 +85,18 @@ html[data-theme="dark"] .theme-toggle{background:#fff;color:#111;border-color:#d
   background-repeat: repeat;
   background-position: center right;
   background-size: 420px;
+}*/
+
+.footer-widgets {
+position: static !important;
+overflow: hidden;
+background-color: #0b44fa !important;
+background-image: none !important;
+background-repeat: repeat;
+background-position: center right;
+background-size: 420px;
 }
+
 .footer-widgets-1 {
   width: 80% !important;
   max-width: 1200px !important;
