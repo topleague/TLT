@@ -195,3 +195,249 @@ background-color: #F2F2F2!important;
 .title-area {
 width: auto;
 }
+
+/* =========================================================
+   TLT HEADER — FINAL RESPONSIVE HEADER
+   ========================================================= */
+
+.site-header {
+    position: relative !important;
+    z-index: 1000 !important;
+    background: #0b44fa !important;
+}
+
+.site-header > .wrap {
+    width: 100% !important;
+    max-width: 1280px !important;
+    min-height: 104px !important;
+    margin: 0 auto !important;
+    padding: 0 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    box-sizing: border-box !important;
+}
+
+/* Logo */
+
+.site-header .title-area {
+    float: none !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex: 0 0 auto !important;
+}
+
+.site-header .custom-logo-link {
+    display: block !important;
+    line-height: 0 !important;
+}
+
+.site-header .custom-logo {
+    display: block !important;
+    width: 210px !important;
+    height: 70px !important;
+}
+
+/* Desktop navigation */
+
+.site-header .nav-primary {
+    float: none !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+.site-header .genesis-nav-menu {
+    display: flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    margin: 0 !important;
+}
+
+.site-header .genesis-nav-menu > .menu-item {
+    float: none !important;
+    position: relative !important;
+    margin: 0 !important;
+}
+
+.site-header .genesis-nav-menu > .menu-item > a {
+    display: flex !important;
+    align-items: center !important;
+    height: 46px !important;
+    padding: 0 18px !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+}
+
+.site-header .genesis-nav-menu > .menu-item:hover > a,
+.site-header .genesis-nav-menu > .current-menu-item > a {
+    background: rgba(255,255,255,.12) !important;
+}
+
+/* Hide mobile controls on desktop */
+
+.site-header .menu-toggle,
+.site-header .sub-menu-toggle {
+    display: none !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media only screen and (max-width: 1023px) {
+
+    .site-header > .wrap {
+        width: 100% !important;
+        min-height: 82px !important;
+        padding: 0 24px !important;
+    }
+
+    .site-header .title-area {
+        width: auto !important;
+        flex: 0 0 auto !important;
+    }
+
+    .site-header .custom-logo {
+        width: 175px !important;
+        height: auto !important;
+    }
+
+    /* Hamburger */
+
+    .site-header .menu-toggle {
+        display: flex !important;
+        position: relative !important;
+        width: 44px !important;
+        height: 44px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: 0 !important;
+        background: transparent !important;
+        align-items: center !important;
+        justify-content: center !important;
+        cursor: pointer !important;
+    }
+
+    .site-header .hamburger-box {
+        width: 28px !important;
+        height: 20px !important;
+        position: relative !important;
+        display: block !important;
+    }
+
+    .site-header .hamburger-inner,
+    .site-header .hamburger-inner::before,
+    .site-header .hamburger-inner::after {
+        position: absolute !important;
+        width: 28px !important;
+        height: 2px !important;
+        background: #fff !important;
+        border-radius: 2px !important;
+        left: 0 !important;
+        transition: transform .2s ease, opacity .2s ease !important;
+    }
+
+    .site-header .hamburger-inner {
+        top: 9px !important;
+    }
+
+    .site-header .hamburger-inner::before,
+    .site-header .hamburger-inner::after {
+        content: "" !important;
+    }
+
+    .site-header .hamburger-inner::before {
+        top: -8px !important;
+    }
+
+    .site-header .hamburger-inner::after {
+        top: 8px !important;
+    }
+
+    .site-header .menu-toggle.activated .hamburger-inner {
+        background: transparent !important;
+    }
+
+    .site-header .menu-toggle.activated .hamburger-inner::before {
+        transform: translateY(8px) rotate(45deg) !important;
+    }
+
+    .site-header .menu-toggle.activated .hamburger-inner::after {
+        transform: translateY(-8px) rotate(-45deg) !important;
+    }
+
+    /* Mobile navigation */
+
+    .site-header .nav-primary {
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        width: 100% !important;
+        margin: 0 !important;
+        background: #0b44fa !important;
+        box-shadow: 0 12px 30px rgba(0,0,0,.18) !important;
+    }
+
+    .site-header .genesis-nav-menu {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .site-header .genesis-nav-menu > .menu-item {
+        display: block !important;
+        width: 100% !important;
+        border-top: 1px solid rgba(255,255,255,.12) !important;
+    }
+
+    .site-header .genesis-nav-menu > .menu-item > a {
+        height: 56px !important;
+        padding: 0 24px !important;
+    }
+
+    /* Submenu */
+
+    .site-header .sub-menu-toggle {
+        display: block !important;
+        position: absolute !important;
+        top: 0 !important;
+        right: 12px !important;
+        width: 56px !important;
+        height: 56px !important;
+        padding: 0 !important;
+        border: 0 !important;
+        background: transparent !important;
+        color: #fff !important;
+    }
+
+    .site-header .sub-menu-toggle::before {
+        content: "+" !important;
+        font-size: 22px !important;
+    }
+
+    .site-header .sub-menu-toggle.activated::before {
+        content: "−" !important;
+    }
+
+    .site-header .sub-menu {
+        position: static !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: rgba(0,0,0,.10) !important;
+        box-shadow: none !important;
+    }
+
+    .site-header .sub-menu a {
+        display: block !important;
+        height: auto !important;
+        padding: 14px 42px !important;
+        color: #fff !important;
+    }
+}
