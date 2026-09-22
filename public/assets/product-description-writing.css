@@ -1,0 +1,284 @@
+/* =========================================================
+   PRODUCT DESCRIPTION WRITING — PAGE-SPECIFIC CSS
+   Derived from the supplied WordPress WebArchive.
+   ========================================================= */
+
+.product-description-writing {
+    background: #f2f2f2;
+}
+
+.product-description-writing .post-hero {
+    padding-top: 25rem;
+    padding-bottom: 25rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.product-description-writing .post-hero .wrap {
+    position: relative;
+    z-index: 2;
+    max-width: 960px;
+    color: #fff;
+    text-align: center;
+}
+
+.product-description-writing .post-hero .page-title {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Mona Extra Bold', system-ui, sans-serif;
+    font-size: 5rem;
+    line-height: 1.15;
+    letter-spacing: -.025em;
+}
+
+.product-description-writing .post-hero .page-excerpt {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Mona Regular', sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.45;
+}
+
+.product-description-writing .after-hero svg {
+    display: block;
+    width: 100%;
+    height: 120px;
+    margin-top: -120px;
+    position: relative;
+    z-index: 3;
+}
+
+.product-description-writing .site-inner {
+    padding-top: 0;
+}
+
+.product-description-writing .entry {
+    background: #fff;
+}
+
+.product-description-writing .entry-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.product-description-writing .entry-content > p:first-child {
+    font-size: 150%;
+    font-family: 'Mona Regular', sans-serif;
+}
+
+.product-description-writing .serivces {
+    box-sizing: border-box;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.product-description-writing .services-desc {
+    width: 100%;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.product-description-writing h3.serivces-title {
+    margin-bottom: 18px;
+    font-family: 'Mona Extra Bold', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0;
+    color: #333;
+}
+
+.product-description-writing .hero-subtitle {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Mona Regular', sans-serif;
+}
+
+.product-description-writing .services-usp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5vh 1.5vw;
+    text-align: left;
+}
+
+.product-description-writing .services-usp .one-third {
+    width: auto;
+    margin: 0;
+}
+
+.product-description-writing .cluster {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.product-description-writing .cluster-icon {
+    flex: 0 0 60px;
+    margin-top: 0;
+}
+
+.product-description-writing .cluster-icon svg {
+    width: 50px;
+    height: 50px;
+    stroke: #4267cf;
+}
+
+.product-description-writing .cluster-blurb h4 {
+    margin: 0 0 10px;
+    font-family: 'Mona Extra Bold', sans-serif;
+    font-size: 2.35rem;
+    line-height: 1.2;
+}
+
+.product-description-writing .cluster-blurb p {
+    margin: 0;
+}
+
+.product-description-writing hr {
+    margin: 60px 0;
+}
+
+.product-description-writing .basic {
+    border: 1px solid #ccc;
+    background: #fff;
+    text-align: center;
+    padding: 45px 25px;
+    margin: 0 auto 5px;
+    border-radius: 10px;
+}
+
+.product-description-writing .popular-plan .basic {
+    border: none;
+    background: hsl(290deg 5% 95%);
+}
+
+.product-description-writing .basic .price {
+    margin-bottom: 5vh;
+    font-family: 'Mona Regular', sans-serif !important;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.product-description-writing .basic li {
+    list-style: none;
+}
+
+.product-description-writing .basic li::after {
+    content: "";
+    display: block;
+    width: 10%;
+    margin: 0 auto 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #ddd;
+}
+
+.product-description-writing .basic .button-primary {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Preserve original footer treatment while using local assets. */
+.product-description-writing .footer-widgets {
+    position: static !important;
+    background-image: url("/assets/product-description-writing/wavy-pattern-1.svg");
+    background-repeat: repeat;
+    background-position: center right -120px;
+    background-size: 400px;
+}
+
+.product-description-writing .footer-widgets-1 {
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10vh 0 0;
+    float: none;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 0;
+}
+
+.product-description-writing .footer-widgets .image {
+    width: 300px;
+}
+
+/* Tablet */
+@media only screen and (max-width: 1024px) {
+    .product-description-writing .post-hero {
+        padding-top: 13rem;
+        padding-bottom: 13rem;
+    }
+
+    .product-description-writing .services-usp {
+        max-width: 840px;
+        margin: 0 auto;
+    }
+}
+
+/* Small tablet */
+@media only screen and (max-width: 768px) {
+    .product-description-writing .post-hero {
+        padding-top: 13rem;
+        padding-bottom: 13rem;
+    }
+
+    .product-description-writing .post-hero .page-title {
+        font-size: 3.75rem;
+        line-height: 1.2;
+        text-align: left;
+    }
+
+    .product-description-writing .post-hero .page-excerpt {
+        max-width: 100%;
+        text-align: left;
+        font-size: 2.5rem;
+    }
+
+    .product-description-writing .after-hero svg {
+        height: 3vh;
+        margin-top: -3vh;
+    }
+
+    .product-description-writing .services-usp {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-description-writing .basic {
+        width: 58.333%;
+    }
+
+    .product-description-writing .footer-widgets-1 {
+        width: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Phone */
+@media only screen and (max-width: 568px) {
+    .product-description-writing .post-hero {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    .product-description-writing .post-hero .page-title {
+        font-size: 3.2rem;
+    }
+
+    .product-description-writing .post-hero .page-excerpt {
+        font-size: 2rem;
+    }
+
+    .product-description-writing .services-usp {
+        grid-template-columns: 1fr;
+    }
+
+    .product-description-writing .basic {
+        width: 100%;
+    }
+
+    .product-description-writing .footer-widgets-1 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
